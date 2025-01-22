@@ -43,6 +43,8 @@ public class Action {
     private List<Button> buttons;
     @JsonProperty("sections")
     private List<Section> sections;
+    @JsonProperty("name")
+    private String name;
 
     /**
      * Gets catalog id.
@@ -167,6 +169,15 @@ public class Action {
         if (this.sections == null) this.sections = new ArrayList<>();
 
         this.sections.add(section);
+        return this;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Action setName(String name) {
+        this.name = name;
         return this;
     }
 }
