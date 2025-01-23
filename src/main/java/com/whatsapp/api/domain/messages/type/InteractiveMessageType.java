@@ -32,12 +32,12 @@ public enum InteractiveMessageType {
     /**
      * Call to action interactive message type.
      */
-    CTA("cta_url"), //
+    CTA_URL("cta_url"), //
 
     /**
      * Location request interactive message type.
      */
-    LOCATION_REQUEST("location_request_message");
+    LOCATION_REQUEST_MESSAGE("location_request_message");
 
     private final String value;
 
