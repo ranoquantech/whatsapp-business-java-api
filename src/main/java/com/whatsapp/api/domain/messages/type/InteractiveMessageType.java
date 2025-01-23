@@ -27,7 +27,17 @@ public enum InteractiveMessageType {
     /**
      * Product list interactive message type.
      */
-    PRODUCT_LIST("product_list");
+    PRODUCT_LIST("product_list"), //
+
+    /**
+     * Call to action interactive message type.
+     */
+    CTA("cta_url"), //
+
+    /**
+     * Location request interactive message type.
+     */
+    LOCATION_REQUEST("location_request");
 
     private final String value;
 

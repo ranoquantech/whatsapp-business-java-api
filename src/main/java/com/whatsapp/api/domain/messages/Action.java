@@ -45,6 +45,8 @@ public class Action {
     private List<Section> sections;
     @JsonProperty("name")
     private String name;
+    @JsonProperty("parameters")
+    private Parameters parameters;
 
     /**
      * Gets catalog id.
@@ -178,6 +180,15 @@ public class Action {
 
     public Action setName(String name) {
         this.name = name;
+        return this;
+    }
+
+    public Parameters getParameters() {
+        return parameters;
+    }
+
+    public Action setParameters(Parameters parameters) {
+        this.parameters = parameters;
         return this;
     }
 }
