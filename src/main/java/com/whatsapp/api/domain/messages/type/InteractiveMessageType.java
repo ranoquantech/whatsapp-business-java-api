@@ -37,7 +37,7 @@ public enum InteractiveMessageType {
     /**
      * Location request interactive message type.
      */
-    LOCATION_REQUEST("location_request");
+    LOCATION_REQUEST("location_request_message");
 
     private final String value;
 
