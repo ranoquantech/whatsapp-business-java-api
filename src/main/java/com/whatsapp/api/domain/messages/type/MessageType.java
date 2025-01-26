@@ -93,6 +93,11 @@ public enum MessageType {
     REQUEST_WELCOME("request_welcome"),//
 
     /**
+     * Request welcome message type.
+     */
+    REQUEST_WELCOME("request_welcome"),//
+
+    /**
      * Hsm message type.
      */
     @Deprecated(forRemoval = true) HSM("hsm");//
