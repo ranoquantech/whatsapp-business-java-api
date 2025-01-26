@@ -87,6 +87,10 @@ public enum MessageType {
      * Unsupported message type.
      */
     UNSUPPORTED("unsupported"),//
+    /**
+     * Request welcome message type.
+     */
+    REQUEST_WELCOME("request_welcome"),//
 
     /**
      * Hsm message type.
