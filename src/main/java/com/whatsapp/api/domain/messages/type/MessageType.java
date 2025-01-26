@@ -91,12 +91,6 @@ public enum MessageType {
      * Request welcome message type.
      */
     REQUEST_WELCOME("request_welcome"),//
-
-    /**
-     * Request welcome message type.
-     */
-    REQUEST_WELCOME("request_welcome"),//
-
     /**
      * Hsm message type.
      */
