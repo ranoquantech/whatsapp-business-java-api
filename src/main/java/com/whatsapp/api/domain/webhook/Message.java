@@ -3,6 +3,7 @@ package com.whatsapp.api.domain.webhook;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.whatsapp.api.domain.messages.type.MessageType;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -70,5 +71,5 @@ public record Message(
 
         @JsonProperty("audio") Audio audio,
 
-        @JsonProperty("document") Document document) {
+        @JsonProperty("document") Document document) implements Serializable {
 }

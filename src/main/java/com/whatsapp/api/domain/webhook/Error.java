@@ -2,6 +2,8 @@ package com.whatsapp.api.domain.webhook;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.io.Serializable;
+
 /**
  * The type Error.
  */
@@ -20,5 +22,5 @@ public record Error(
         ErrorData errorData,
         @JsonProperty("href")
         String href
-) {
+) implements Serializable {
 }

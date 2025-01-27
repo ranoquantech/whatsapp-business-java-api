@@ -2,6 +2,7 @@ package com.whatsapp.api.domain.webhook;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -13,5 +14,5 @@ public record Order(
 
         @JsonProperty("product_items") List<Product> productItems,
 
-        @JsonProperty("text") String text) {
+        @JsonProperty("text") String text) implements Serializable {
 }

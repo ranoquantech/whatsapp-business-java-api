@@ -2,6 +2,8 @@ package com.whatsapp.api.domain.webhook;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.io.Serializable;
+
 /**
  * The type Referral.
  *
@@ -35,5 +37,5 @@ public record Referral(
 
         @JsonProperty("source_url") String sourceUrl
 
-) {
+) implements Serializable {
 }

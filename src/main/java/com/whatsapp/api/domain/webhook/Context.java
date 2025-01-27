@@ -2,6 +2,8 @@ package com.whatsapp.api.domain.webhook;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.io.Serializable;
+
 /**
  * The type Context.
  *
@@ -23,6 +25,6 @@ public record Context(
 
         @JsonProperty("frequently_forwarded") boolean frequentlyForwarded
 
-) {
+) implements Serializable {
 
 }

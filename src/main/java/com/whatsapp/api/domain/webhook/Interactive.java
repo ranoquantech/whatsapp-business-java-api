@@ -2,6 +2,8 @@ package com.whatsapp.api.domain.webhook;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.io.Serializable;
+
 /**
  * The type Interactive.
  *
@@ -15,6 +17,6 @@ public record Interactive(
 
         @JsonProperty("type") String type,
 
-        @JsonProperty("button_reply") ButtonReply buttonReply) {
+        @JsonProperty("button_reply") ButtonReply buttonReply) implements Serializable {
 
 }

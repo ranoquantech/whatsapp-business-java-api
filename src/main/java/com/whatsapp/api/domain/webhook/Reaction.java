@@ -2,6 +2,8 @@ package com.whatsapp.api.domain.webhook;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.io.Serializable;
+
 /**
  * The type Reaction.
  *
@@ -14,5 +16,5 @@ public record Reaction(
 
         @JsonProperty("message_id") String messageId
 
-) {
+) implements Serializable {
 }

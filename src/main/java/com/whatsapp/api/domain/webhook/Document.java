@@ -2,6 +2,8 @@ package com.whatsapp.api.domain.webhook;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.io.Serializable;
+
 /**
  * When messages type is set to document, this object is included in the messages object.
  *
@@ -24,5 +26,5 @@ public record Document(
         @JsonProperty("caption") String caption
 
 
-) {
+) implements Serializable {
 }

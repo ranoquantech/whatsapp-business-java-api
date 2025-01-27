@@ -2,6 +2,8 @@ package com.whatsapp.api.domain.webhook;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.io.Serializable;
+
 /**
  * The type Sticker.
  *
@@ -17,6 +19,6 @@ public record Sticker(
 
         @JsonProperty("id") String id,
 
-        @JsonProperty("animated") boolean animated) {
+        @JsonProperty("animated") boolean animated) implements Serializable {
 
 }

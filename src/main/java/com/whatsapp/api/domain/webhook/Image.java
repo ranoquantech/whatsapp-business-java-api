@@ -2,6 +2,8 @@ package com.whatsapp.api.domain.webhook;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.io.Serializable;
+
 /**
  * The type Image.
  *
@@ -18,6 +20,6 @@ public record Image(
 
         @JsonProperty("caption") String caption,
 
-        @JsonProperty("id") String id) {
+        @JsonProperty("id") String id) implements Serializable {
 
 }

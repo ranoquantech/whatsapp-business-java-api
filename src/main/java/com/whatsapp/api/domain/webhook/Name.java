@@ -2,6 +2,8 @@ package com.whatsapp.api.domain.webhook;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.io.Serializable;
+
 /**
  * The type Name.
  */
@@ -19,5 +21,5 @@ public record Name(
 
         @JsonProperty("formatted_name") String formattedName
 
-) {
+) implements Serializable {
 }
